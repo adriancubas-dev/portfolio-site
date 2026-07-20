@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>Develop for Good: Building a Content Design System — Adrian Cubas</title>
-  <meta name="description" content="Case study on building a content design system for Develop for Good.">
+  <meta name="description" content="Case study on building a content design system for Develop for Good's volunteer matching platform.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -37,8 +37,8 @@
   <section class="cs-hero">
     <div class="container">
       <p class="cs-hero__label">Project</p>
-      <h1 class="cs-hero__title">Building a Content Design System</h1>
-      <p class="cs-hero__category">Develop for Good — Content Design</p>
+      <h1 class="cs-hero__title">Develop for Good: Building a content design system for volunteer matching</h1>
+      <p class="cs-hero__category">UX Content Design</p>
     </div>
   </section>
 
@@ -50,17 +50,17 @@
       </div>
       <div class="cs-overview__grid">
         <div class="cs-overview__description">
-          <p>Develop for Good is a nonprofit that connects student volunteers with nonprofits for tech projects. As the organization scaled, they needed consistent content across multiple platforms and volunteer-facing materials. I built a content design system to ensure voice consistency and empower non-designers to create on-brand content.</p>
+          <p>Develop for Good (DFG) is an organization that matches volunteers, looking to gain product experience, to nonprofit organizations' digital projects. The DFG website allows potential volunteers, mentors, and nonprofits to learn about the mission, application process, and impact created through the organization.</p>
         </div>
         <div>
           <p class="cs-overview__meta-label">Role</p>
-          <p class="cs-overview__meta-value">Content Designer</p>
+          <p class="cs-overview__meta-value">Director of Content</p>
           <p class="cs-overview__meta-label" style="margin-top: 16px">Skills</p>
-          <p class="cs-overview__meta-value">Content Strategy, Design Systems, Voice & Tone, Documentation</p>
+          <p class="cs-overview__meta-value">Product management, UX writing, User research, Wireframing</p>
         </div>
         <div>
           <p class="cs-overview__meta-label">Project Timeline</p>
-          <p class="cs-overview__meta-value">3 months</p>
+          <p class="cs-overview__meta-value">4 months</p>
         </div>
       </div>
     </div>
@@ -70,29 +70,115 @@
     <div class="cs-body__content">
       <a href="index.html" class="cs-back">&larr; Back to all work</a>
 
-      <h5 class="cs-body__section-label">Problem</h5>
-      <h3>Inconsistent content across touchpoints</h3>
-      <p>With multiple volunteers creating content and no established guidelines, the organization's voice varied wildly across emails, website copy, social media, and application materials. This inconsistency undermined professionalism and confused potential volunteers and nonprofit partners.</p>
+      <h5 class="cs-body__section-label">The problem</h5>
+      <h3>How might we distinguish the voice, tone, and communication style of DFG?</h3>
+      <p>DFG serves many different user types ranging from volunteers to nonprofit clients. This makes it difficult to maintain a consistent, yet distinct voice across the website. These factors have resulted in content that lacks clarity and deters those hoping to accomplish tasks such as applying to be a volunteer or sharing a project. The project displays the importance of content in shaping a brand's voice and user experience. I led a UX content design team to create a content design system.</p>
 
-      <h5 class="cs-body__section-label">Research</h5>
-      <h3>Auditing existing content</h3>
-      <p>I conducted a comprehensive content audit across all platforms, identifying patterns, inconsistencies, and the most impactful touchpoints. I also interviewed stakeholders to understand the desired brand personality and organizational values.</p>
-
-      <h5 class="cs-body__section-label">Design</h5>
-      <h3>A system built for non-designers</h3>
-      <p>I created a content design system that included voice and tone guidelines, content patterns for common use cases, templates for recurring communications, and a taxonomy for organizing information consistently.</p>
-
-      <h4>System components</h4>
+      <h5 class="cs-body__section-label">Audience</h5>
+      <h3>Understanding users and their needs</h3>
+      <p>The DFG site serves prospective volunteers, mentors, nonprofit clients, and executive board members.</p>
       <ul>
-        <li>Voice and tone framework with spectrum examples</li>
-        <li>Content patterns for emails, social, and web</li>
-        <li>Terminology glossary and word list</li>
-        <li>Templates for volunteer communications and partner outreach</li>
+        <li><strong>Prospective volunteers:</strong> Student volunteers looking to sign up for a project</li>
+        <li><strong>Prospective mentors:</strong> Industry professionals interested in supporting volunteers</li>
+        <li><strong>Potential clients:</strong> Nonprofit clients proposing a project needing support</li>
+        <li><strong>Executive board:</strong> Board members who need to access information or create site content</li>
       </ul>
 
-      <h5 class="cs-body__section-label">Outcome</h5>
-      <h3>Scalable consistency</h3>
-      <p>The content design system enabled consistent communication even as the volunteer team grew. New team members could produce on-brand content without extensive onboarding, and the organization's professional presence improved measurably.</p>
+      <h3>User insights</h3>
+      <img src="https://uploads-ssl.webflow.com/6212f5e51b730032bbf9d7e8/6221f29aa7af1b3a8c9706ff_chart2.png" alt="Survey results showing 34% of users would improve site content" loading="lazy">
+      <p>From an initial survey sent out to existing users, 34% of users indicated they would improve site content. In addition, site analytics showed that over 61% of users bounced when first opening the site. These insights expose the shortcomings of the existing site content in connecting with the user.</p>
+
+      <h5 class="cs-body__section-label">Research process</h5>
+      <h3>Content audit</h3>
+      <img src="https://uploads-ssl.webflow.com/6212f5e51b730032bbf9d7e8/621dd30544481391b54efe1c_Audit1.png" alt="Content audit spreadsheet documenting site assets and proposed revisions" loading="lazy">
+      <p>We conducted a content audit of the DFG site which included team members going through the site, from page to page, and collecting website assets. Our team documented details including the content, screenshots, location, comments, and proposed revisions.</p>
+      <p>Issues found:</p>
+      <ul>
+        <li><strong>Inconsistencies:</strong> Lack of standardization across naming, casing, punctuation, numerals, voice, and tone</li>
+        <li><strong>Brevity:</strong> Content sections that aren't concise or helpful for the user</li>
+        <li><strong>Clashing Design:</strong> Design and content clashes including visual contrast and awkward formatting</li>
+        <li><strong>Content Prioritization:</strong> Content doesn't prioritize the most relevant context for a page or action</li>
+        <li><strong>Visual Hierarchy:</strong> Info and site elements aren't arranged in order of importance</li>
+        <li><strong>Accessibility:</strong> Content isn't accessible to users both in comprehension or visually</li>
+      </ul>
+
+      <h3>Competitive analysis</h3>
+      <img src="https://uploads-ssl.webflow.com/6212f5e51b730032bbf9d7e8/621dc1ef32b626d409b6a1c0_Competitor%20Chart%20(1).png" alt="Competitive analysis chart comparing DFG to competitor content strategies" loading="lazy">
+      <p>The team identified DFG competitors and their content strategy relative to DFG. We explored competitors' sites and noted the voice, tones, and content style.</p>
+      <p><strong>Strengths:</strong> Navigability, User journey, Guidance, Value propositions, Assets, Consistency</p>
+      <p><strong>Weaknesses:</strong> Brand voice, Redundancy, Cognitive load, Narrative, Call to action, Formatting</p>
+
+      <h3>Voice and tone mapping</h3>
+      <img src="https://uploads-ssl.webflow.com/6212f5e51b730032bbf9d7e8/621dd6acdfba7f0ec782ebea_Tone%20%26%20Voice%20Activity.png" alt="Voice and tone mapping activity with team responses" loading="lazy">
+      <p>I led a mapping activity where we answered 3 questions: What is the current voice of DFG? What different tones should we have? How can we improve our existing voice and tone?</p>
+      <p>Key takeaways:</p>
+      <ul>
+        <li>Current voice comes across as professional, positive, and straightforward</li>
+        <li>Tone shifts from supportive to educational to helpful</li>
+        <li>Need to be consistent with communication</li>
+      </ul>
+
+      <h5 class="cs-body__section-label">Style guide</h5>
+      <h3>Building a content design system</h3>
+      <img src="https://uploads-ssl.webflow.com/6212f5e51b730032bbf9d7e8/6222fe96ede3d7862b590891_Group%20258.png" alt="DFG content design system overview showing six categories" loading="lazy">
+      <p>The DFG style guide ensures content contributors create clear and cohesive content that maintains brand consistency. Categories: Voice &amp; Tone, Accessibility, Writing about People, Writing for Projects, Components, External Communications</p>
+
+      <h3>Voice</h3>
+      <img src="https://uploads-ssl.webflow.com/6212f5e51b730032bbf9d7e8/62229ed2c1b8aff7ba37aa16_dfgvoice.png" alt="DFG voice guidelines defining professional, positive, and straightforward tone" loading="lazy">
+      <p>Voice is the personality of a brand or product. Our team defined DFG's voice as professional, positive, and straightforward to maintain across all mediums.</p>
+
+      <h3>Accessibility</h3>
+      <img src="https://uploads-ssl.webflow.com/6212f5e51b730032bbf9d7e8/62229ee515ed860b5cd0e84f_dfgaccess.png" alt="Accessibility guidelines for inclusive content writing and formatting" loading="lazy">
+      <p>Accessibility in content directly affects how users experience our site. We created guidelines ensuring how content is written and formatted is inclusive for users of all types.</p>
+
+      <h3>Buttons</h3>
+      <img src="https://uploads-ssl.webflow.com/6212f5e51b730032bbf9d7e8/62229eedca9a23733cfb04a9_dfgbuttons.png" alt="Button content guidelines for consistent and concise action labels" loading="lazy">
+      <p>Buttons are visual and textual interface elements that allow users to take action. Our team created guidelines to make content consistent, reflective of the intended action, and concise.</p>
+
+      <h5 class="cs-body__section-label">Site improvement</h5>
+      <h3>Implementing changes</h3>
+      <p>Through conducting research and creating the style guide, our team determined site areas where content could be optimized. This section focuses on headers, buttons, and the application flow.</p>
+
+      <h3>Headers</h3>
+      <img src="https://uploads-ssl.webflow.com/6212f5e51b730032bbf9d7e8/6222ae57ba8868af0c8cc30c_buttonsbeforeafter.png" alt="Before and after comparison of header content improvements" loading="lazy">
+      <p><strong>Issues:</strong></p>
+      <ul>
+        <li>Headers are too long</li>
+        <li>Wording is vague</li>
+        <li>Use of past tense</li>
+        <li>Content doesn't directly appeal to users</li>
+      </ul>
+      <p><strong>Improvements:</strong></p>
+      <ul>
+        <li>Use of present tense</li>
+        <li>Replacing confusing phrases</li>
+        <li>Removing adjectives that complicate content</li>
+        <li>More aspirational tone</li>
+      </ul>
+
+      <h3>Buttons</h3>
+      <img src="https://uploads-ssl.webflow.com/6212f5e51b730032bbf9d7e8/6222b343192f2f9a4d8928c2_headersbeforeafter.png" alt="Before and after comparison of button content improvements" loading="lazy">
+      <p><strong>Issues:</strong></p>
+      <ul>
+        <li>Phrasing isn't action oriented</li>
+        <li>Verb tenses aren't consistent</li>
+        <li>Casing isn't maintained</li>
+        <li>Buttons are too long</li>
+      </ul>
+      <p><strong>Improvements:</strong></p>
+      <ul>
+        <li>Button content drives user action</li>
+        <li>Sentence casing maintained</li>
+        <li>Tenses consistent</li>
+        <li>Content shortened</li>
+      </ul>
+
+      <h5 class="cs-body__section-label">Conclusion</h5>
+      <h3>Next steps</h3>
+      <p>Following the implementation of proposed changes, there should be continued auditing of the existing site. There should also be more research into DFG users' expectations and needs.</p>
+
+      <h3>Takeaways</h3>
+      <p>The style guide has become a source that DFG board members refer to when creating content for the website and external communications. Additionally, with the launch of the UX content design initiative, UX content designers utilize the guidelines as a framework when developing content for nonprofit clients. Through the process, I discovered the importance of different perspectives and collaboration.</p>
     </div>
   </section>
 

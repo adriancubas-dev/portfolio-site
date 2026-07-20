@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>Mercari: Integrating Social and Community Features — Adrian Cubas</title>
-  <meta name="description" content="Case study on integrating social and community features at Mercari.">
+  <meta name="description" content="Case study on integrating social and community features into the Mercari marketplace.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -37,8 +37,8 @@
   <section class="cs-hero">
     <div class="container">
       <p class="cs-hero__label">Project</p>
-      <h1 class="cs-hero__title">Integrating Social and Community Features</h1>
-      <p class="cs-hero__category">Mercari — Product Design</p>
+      <h1 class="cs-hero__title">Mercari: Integrating social and community features into the marketplace</h1>
+      <p class="cs-hero__category">UX Content Design</p>
     </div>
   </section>
 
@@ -50,17 +50,17 @@
       </div>
       <div class="cs-overview__grid">
         <div class="cs-overview__description">
-          <p>Mercari is Japan's largest marketplace app with over 20 million monthly active users. I led the design for integrating social and community features — including comments, likes, and seller profiles — to increase engagement and build trust between buyers and sellers.</p>
+          <p>Mercari is a marketplace where people can buy and sell freely. An important part to transacting is being able to interact with others, yet users are limited in the ways they can do so. In response, this project seeks to develop ways people can engage with one another and find community within the marketplace.</p>
         </div>
         <div>
           <p class="cs-overview__meta-label">Role</p>
-          <p class="cs-overview__meta-value">Product Designer</p>
+          <p class="cs-overview__meta-value">Sr. UX Content Designer</p>
           <p class="cs-overview__meta-label" style="margin-top: 16px">Skills</p>
-          <p class="cs-overview__meta-value">UX Research, Interaction Design, Prototyping, User Testing</p>
+          <p class="cs-overview__meta-value">UX content design, UI design, research, user flows, taxonomy, information architecture, competitive analysis, audit</p>
         </div>
         <div>
           <p class="cs-overview__meta-label">Project Timeline</p>
-          <p class="cs-overview__meta-value">3 months</p>
+          <p class="cs-overview__meta-value">4-5 months</p>
         </div>
       </div>
     </div>
@@ -70,29 +70,77 @@
     <div class="cs-body__content">
       <a href="index.html" class="cs-back">&larr; Back to all work</a>
 
-      <h5 class="cs-body__section-label">Problem</h5>
-      <h3>Users lacked ways to connect</h3>
-      <p>Mercari's marketplace was primarily transactional. Users had limited ways to ask questions about listings, share opinions, or build community around shared interests. This gap led to lower engagement and reduced trust between buyers and sellers.</p>
+      <h5 class="cs-body__section-label">The problem</h5>
+      <h3>How might we develop community in the marketplace that encourages meaningful connection and engagement?</h3>
+      <p>A key part of transacting on Mercari is being able to interact with others, yet users were limited in the ways they could do that. In fact, users could only message other sellers from individual item detail page. This affected how users could connect with one another, impacting the ability to build trust between users and in the platform itself.</p>
+      <p>In response, this project was aimed at developing more ways for people to engage with one another and find community within the marketplace. By speaking directly to users to learn about their shopping behavior, we identified new conversation types to encourage on the platform and foundational features that could further this. This included direct messaging, comments, community groups, and following behavior.</p>
+
+      <h5 class="cs-body__section-label">Initial experience</h5>
+      <img src="https://uploads-ssl.webflow.com/6212f5e51b730032bbf9d7e8/668112f9eef02f2ba2089d62_Group%2057.png" alt="Existing user flows for community and social features" loading="lazy">
+      <p>To start, I mapped out the existing user flows for community and social features. This helped the team understand the existing state of these features and how we could build upon them for future iteration.</p>
+
+      <h3>Observations and pain points</h3>
+      <p>While there was existing functionality related to community, all related features had gaps that affected their adoption.</p>
+      <img src="https://uploads-ssl.webflow.com/6212f5e51b730032bbf9d7e8/66823c7b622055ae6aee97ff_Group%2059%20(3).png" alt="Observations and pain points for existing community features" loading="lazy">
 
       <h5 class="cs-body__section-label">Research</h5>
-      <h3>Understanding user needs</h3>
-      <p>Through user interviews and competitive analysis, I identified key pain points: buyers wanted to ask public questions about items, sellers wanted to build followings, and both groups wanted lightweight social interactions without leaving the marketplace.</p>
+      <h3>Understanding our users</h3>
+      <p>Before exploring solutions, I partnered with research and data teams to understand how users use existing features. Our target audience was the Gen Z audience, specifically collectors and hobbyists who frequent Mercari.</p>
+      <img src="https://uploads-ssl.webflow.com/6212f5e51b730032bbf9d7e8/668387dd8d56cda6579b4b2b_Group%208.png" alt="User research findings and target audience insights" loading="lazy">
 
-      <h5 class="cs-body__section-label">Design</h5>
-      <h3>Building trust through interaction</h3>
-      <p>I designed a comments system that allowed public Q&A on listings, a likes/favorites feature for community curation, and enhanced seller profiles that showcased reputation and activity.</p>
-
-      <h4>Key design decisions</h4>
+      <p>Through 1:1 interviews with users, we shared some early concepts which revealed insights:</p>
       <ul>
-        <li>Public comments visible to all users to build trust through transparency</li>
-        <li>Seller response indicators to show engagement levels</li>
-        <li>Community guidelines integrated into the comment flow</li>
-        <li>Notification system to keep conversations active</li>
+        <li>People saw community as a tool to enable transactions to take place</li>
+        <li>Users incorrectly assumed that hashtags would boost their items in search</li>
+        <li>Sellers found it time consuming to respond to individual messages</li>
+        <li>Challenges in messaging around 'general' topics because messaging is restricted to a single-item and the chat closes after an item sells</li>
+        <li>Follows often happen out of courtesy, but people never access their actual following list after</li>
       </ul>
 
-      <h5 class="cs-body__section-label">Outcome</h5>
-      <h3>Increased engagement and trust</h3>
-      <p>The social features led to measurable improvements in listing engagement, buyer confidence, and time spent in the app. Comments became a key trust signal for new buyers evaluating sellers.</p>
+      <h5 class="cs-body__section-label">Design process</h5>
+      <h3>Strategizing content for interfaces</h3>
+      <p>One part of the content development process was determining the tone when it came to community related content. Often, content on Mercari is straight-forward, informative, and concise. Considering one of the main demographics we wanted to target was Gen-Z, I had to lead into content that felt inspiring, thoughtful, and engaging.</p>
+      <img src="https://uploads-ssl.webflow.com/6212f5e51b730032bbf9d7e8/668c6085b8e3b64de20dc6f6_Group%201010101362.png" alt="Content tone strategy for community features" loading="lazy">
+
+      <h3>Naming and taxonomy</h3>
+      <p>With the many new features and existing surfaces affected, it was important to have a clear documentation of how to refer to things. I laid out a map of how the language for core social features connected with one another and possible naming options. This helped understand the relationship between features and craft the ways to externally refer to new product.</p>
+      <img src="https://uploads-ssl.webflow.com/6212f5e51b730032bbf9d7e8/668c621c79ea5870b4e62e42_Group%201010101266%20(2).png" alt="Naming and taxonomy map for social features" loading="lazy">
+
+      <h5 class="cs-body__section-label">Final designs</h5>
+      <img src="https://uploads-ssl.webflow.com/6212f5e51b730032bbf9d7e8/668110cfc64757f6bf982ae4_Group%2056.png" alt="Proposed flows for community-related features" loading="lazy">
+      <p>After we worked as a group to prioritize the different feature sets, I updated the map with the proposed flows for community-related features and how they would cross one another.</p>
+
+      <h3>Communities (Hashtag groups)</h3>
+      <p>Throughout this project, we built upon the existing foundation from the hashtag flow. One of the massive shifts was around shifting the mental model of hashtags from another search results page into a vibrant space for users to connect with one another and revisit.</p>
+      <img src="https://uploads-ssl.webflow.com/6212f5e51b730032bbf9d7e8/668310cf4a5c41506fd86b79_Group%201010101346.png" alt="Communities hashtag groups design - exploration" loading="lazy">
+      <img src="https://uploads-ssl.webflow.com/6212f5e51b730032bbf9d7e8/66830f88d401b408fa36349e_Group%201010101347.png" alt="Communities hashtag groups design - interaction" loading="lazy">
+      <img src="https://uploads-ssl.webflow.com/6212f5e51b730032bbf9d7e8/66830f8fa278e9aeb73d15f3_Group%201010101348.png" alt="Communities hashtag groups design - engagement" loading="lazy">
+
+      <h3>Following</h3>
+      <p>A major goal of the "Following" feature set was to increase visibility of people someone follows. We created clearer entry points that also gave users more control over following others and finding people more easily.</p>
+      <img src="https://uploads-ssl.webflow.com/6212f5e51b730032bbf9d7e8/66826896864eacea2235227e_Group%201010101273.png" alt="Following feature design - discovery" loading="lazy">
+      <img src="https://uploads-ssl.webflow.com/6212f5e51b730032bbf9d7e8/668268582141809da57fa28a_Group%201010101274.png" alt="Following feature design - management" loading="lazy">
+      <img src="https://uploads-ssl.webflow.com/6212f5e51b730032bbf9d7e8/66826a7b9fc729d59aaa9b28_Group%201010101275.png" alt="Following feature design - visibility" loading="lazy">
+
+      <h3>Messaging</h3>
+      <p>To increase interaction between users, we wanted to remove barriers that would allow organic, non-single item conversation to take place. This included a new entry point and more reassurance about messaging with others. I also crafted more upfront communication of the status of messages to prompt users to take action when applicable.</p>
+      <img src="https://uploads-ssl.webflow.com/6212f5e51b730032bbf9d7e8/66828349bbf16608bbf634a1_Group%201010101276.png" alt="Messaging feature design - new entry points" loading="lazy">
+      <img src="https://uploads-ssl.webflow.com/6212f5e51b730032bbf9d7e8/66828327d00c7c5b3dcdaf94_Group%201010101278.png" alt="Messaging feature design - status communication" loading="lazy">
+
+      <h3>Commenting</h3>
+      <p>Outside of messaging, we wanted to promote more transparency and public discourse. Through comments, I've crafted messaging that reinforces comments as a way for people to provide feedback, promote their items, and ask questions.</p>
+      <img src="https://uploads-ssl.webflow.com/6212f5e51b730032bbf9d7e8/6683289285f8e6d0845016cf_Group%201010101355.png" alt="Commenting feature design - feedback" loading="lazy">
+      <img src="https://uploads-ssl.webflow.com/6212f5e51b730032bbf9d7e8/6683289e52cb8b0a55d4ade5_Group%201010101356.png" alt="Commenting feature design - promotion" loading="lazy">
+      <img src="https://uploads-ssl.webflow.com/6212f5e51b730032bbf9d7e8/6683294107de824e4fce5e7c_Group%201010101358.png" alt="Commenting feature design - questions" loading="lazy">
+
+      <h5 class="cs-body__section-label">Conclusion</h5>
+      <h3>Project impact</h3>
+      <img src="https://uploads-ssl.webflow.com/6212f5e51b730032bbf9d7e8/6683709e2c74f037a3848d40_Group%201010101359.png" alt="Project impact metrics showing increased engagement" loading="lazy">
+      <p>Since the launch of community features, we saw an increase in engagement across Mercari across all feature sets. We observed an effect on increase in item views as well as overall conversion rate which signaled how these social-features enabled more transactions to take place.</p>
+
+      <h3>Takeaways and future plans</h3>
+      <p>This project focused on building a stronger sense of community within Mercari's marketplace. I listened to users to understand their needs and tackle issues like hashtag confusion and limited messaging options. By introducing features like direct messaging, comments, and community groups, we made it easier for users to connect. This included turning abstract concepts like "communities" into a long-term vision with practical use cases in mind. As the lead Content Designer, I mapped out these features to highlight individual actions users could take while also identifying opportunities for future integration.</p>
+      <p>Looking ahead, the team has discussed strategies to drive organic engagement in community groups, such as implementing notifications and new content types to attract and retain users.</p>
     </div>
   </section>
 

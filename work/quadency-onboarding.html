@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>Quadency: Developing the Onboarding Experience — Adrian Cubas</title>
-  <meta name="description" content="Case study on developing the onboarding experience for Quadency.">
+  <meta name="description" content="Case study on developing the onboarding experience for crypto trading at Quadency.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -37,8 +37,8 @@
   <section class="cs-hero">
     <div class="container">
       <p class="cs-hero__label">Project</p>
-      <h1 class="cs-hero__title">Developing the Onboarding Experience</h1>
-      <p class="cs-hero__category">Quadency — UX Design</p>
+      <h1 class="cs-hero__title">Quadency: Developing the onboarding experience for crypto trading</h1>
+      <p class="cs-hero__category">Product Management</p>
     </div>
   </section>
 
@@ -50,17 +50,17 @@
       </div>
       <div class="cs-overview__grid">
         <div class="cs-overview__description">
-          <p>Quadency is a crypto trading platform that aggregates multiple exchanges. New users faced a steep learning curve connecting accounts and understanding automated trading. I designed the onboarding flow to reduce time-to-value and increase activation rates.</p>
+          <p>Quadency is a trading platform for investors of all levels. Users can use the web and mobile platform to manage their portfolios, trade crypto, and use advanced trading tools like bots. After signing up, users are directed to onboard or get set up for Quadency.</p>
         </div>
         <div>
           <p class="cs-overview__meta-label">Role</p>
-          <p class="cs-overview__meta-value">UX Designer</p>
+          <p class="cs-overview__meta-value">Product Manager</p>
           <p class="cs-overview__meta-label" style="margin-top: 16px">Skills</p>
-          <p class="cs-overview__meta-value">User Research, Information Architecture, Interaction Design, Usability Testing</p>
+          <p class="cs-overview__meta-value">Product management, UX design, UX research, User flows, UX content design</p>
         </div>
         <div>
           <p class="cs-overview__meta-label">Project Timeline</p>
-          <p class="cs-overview__meta-value">3 months</p>
+          <p class="cs-overview__meta-value">4 months</p>
         </div>
       </div>
     </div>
@@ -70,29 +70,80 @@
     <div class="cs-body__content">
       <a href="index.html" class="cs-back">&larr; Back to all work</a>
 
-      <h5 class="cs-body__section-label">Problem</h5>
-      <h3>Complex setup with high drop-off</h3>
-      <p>New users needed to connect exchange APIs, understand trading bots, and configure portfolios — all before seeing any value. The multi-step setup had a high abandonment rate, with most users dropping off during exchange connection.</p>
+      <h5 class="cs-body__section-label">The problem</h5>
+      <h3>What can we do to help users get started with Quadency?</h3>
+      <p>Quadency's mobile app only allows users to log in as account creation is only available on the desktop version. Upon logging in, the user is directed to the trading dashboard without guidance. The lack of an introduction confuses and deters users from further performing other actions. This factor results in high dropoff from users who can't set up an account or get started.</p>
+      <p>This project aims at better understanding the users' end goals and experience with Quadency. Based on these findings, I develop a mobile onboarding flow and associated product requirements to address existing shortcomings. I lead a product team of UX designers, writers, and engineers to launch this onboarding flow.</p>
 
-      <h5 class="cs-body__section-label">Research</h5>
-      <h3>Mapping the activation journey</h3>
-      <p>Through funnel analysis and user interviews, I mapped the critical path to the "aha moment" — the point where users first saw their consolidated portfolio across exchanges. I identified that simplifying this path was key to retention.</p>
+      <h5 class="cs-body__section-label">Metrics</h5>
+      <h3>Understanding user behavior</h3>
+      <img src="https://uploads-ssl.webflow.com/6212f5e51b730032bbf9d7e8/6224735a7d35c7978336dacf_QuadStats.png" alt="Funnel analysis showing user dropoff after account creation" loading="lazy">
+      <p>To understand user behavior on the platform, I ran a funnel analysis on Heap to figure out where users dropped off after account creation. This contained metrics on steps including selecting an exchange, connecting an exchange account, and making a trade. Out of 12.8k monthly users that created an account, only (23.8%) 3.1k users completed all these steps. These insights allowed me to understand the necessity of creating an onboarding flow that would drive more conversion.</p>
 
-      <h5 class="cs-body__section-label">Design</h5>
-      <h3>Progressive disclosure and guided setup</h3>
-      <p>I restructured onboarding around progressive disclosure: show only what's needed at each step, celebrate milestones, and defer advanced configuration until after the user has experienced core value.</p>
-
-      <h4>Key design principles</h4>
+      <h5 class="cs-body__section-label">User types</h5>
+      <h3>Segmenting the different users</h3>
+      <p>Quadency is a leading crypto trading platform that serves users of all different types. The platform consists of users with different backgrounds, including experience and risk levels. We categorize these users as beginner, amateur, and advanced.</p>
       <ul>
-        <li>Step-by-step guided flow with clear progress indicators</li>
-        <li>Inline help and contextual education at decision points</li>
-        <li>Quick-start option to view portfolio before configuring bots</li>
-        <li>Success celebrations at key milestones to build momentum</li>
+        <li><strong>Beginner:</strong> Unfamiliar with trading and first-time usage. User needs full guidance as well as explanation of trading concepts and features.</li>
+        <li><strong>Amateur:</strong> Some familiarity with trading and exchanges. User may need some guidance on how to get started.</li>
+        <li><strong>Advanced:</strong> Trades on other exchanges and uses advanced tools. User doesn't need any guidance and wants to begin trading directly.</li>
       </ul>
 
-      <h5 class="cs-body__section-label">Outcome</h5>
-      <h3>Faster activation and higher retention</h3>
-      <p>The redesigned onboarding reduced time-to-first-value and increased the percentage of users who completed setup and remained active after their first week.</p>
+      <h5 class="cs-body__section-label">Research</h5>
+      <h3>Competitor analysis</h3>
+      <img src="https://uploads-ssl.webflow.com/6212f5e51b730032bbf9d7e8/622479e7ceb046856f1413ed_CompetitiveAnalysis%20(1).png" alt="Competitive analysis of onboarding flows from crypto trading platforms" loading="lazy">
+      <p>I identified Quadency competitors and explored their onboarding flows. I documented factors including the format, length, strengths, and weaknesses. Key insights:</p>
+      <ul>
+        <li>Step-by-step format guides users</li>
+        <li>Length can deter users from completion</li>
+        <li>Safety and verification reinforces confidence in the platform</li>
+        <li>Incentives drive users to complete the flow</li>
+        <li>Content should be minimal and drive the intended action</li>
+      </ul>
+
+      <h5 class="cs-body__section-label">Design process</h5>
+      <h3>Creating a user flow</h3>
+      <img src="https://uploads-ssl.webflow.com/6212f5e51b730032bbf9d7e8/622469384625dd8296745395_OnboardingFlow.png" alt="User flow diagram for the Quadency mobile onboarding experience" loading="lazy">
+      <p>Based on Quadency's different user levels, I wanted to create an accessible and natural user flow to introduce users to the mobile platform. This flow prioritizes the main steps to get started and begin trading with Quadency. The proposed flow: Sign up > Email verification > Security guidelines > Select exchange > Connect exchange account > Return to dashboard</p>
+
+      <h3>Building lo-fi wireframes</h3>
+      <p>Following the user flow creation, I strategized how to align the app UI with the product requirements. I designed low-fidelity wireframes and drafted content for each screen for the designer's reference.</p>
+
+      <img src="https://uploads-ssl.webflow.com/6212f5e51b730032bbf9d7e8/622542bd7e7fc1a61d8fdd82_lofi1.png" alt="Lo-fi wireframes showing app entry, sign up, and email verification screens" loading="lazy">
+      <ul>
+        <li><strong>App Entry:</strong> After opening the app, the user can sign up or log in now.</li>
+        <li><strong>Sign Up:</strong> User enters details including their name, email, password, and agrees to the terms.</li>
+        <li><strong>Email Verification:</strong> User is prompted to verify their email to activate the account.</li>
+      </ul>
+
+      <img src="https://uploads-ssl.webflow.com/6212f5e51b730032bbf9d7e8/622542d17e7fc157918fdfb6_lofi2.png" alt="Lo-fi wireframes showing email confirmation, getting started, and security guidelines screens" loading="lazy">
+      <ul>
+        <li><strong>Email Verification:</strong> After the email is verified, the user is presented a confirmation.</li>
+        <li><strong>Getting Started:</strong> User is redirected to onboarding entry where they are walked through steps. They can also skip.</li>
+        <li><strong>Security Guidelines:</strong> Security guidelines are presented to the user.</li>
+      </ul>
+
+      <img src="https://uploads-ssl.webflow.com/6212f5e51b730032bbf9d7e8/622542eb9b85a71dac57e214_lofi3.png" alt="Lo-fi wireframes showing exchange selection, account connection, and setup complete screens" loading="lazy">
+      <ul>
+        <li><strong>Selecting an Exchange:</strong> User is prompted to select a cryptocurrency exchange from the global list.</li>
+        <li><strong>Connect Account:</strong> User can enter the API key, secret key, and account nickname.</li>
+        <li><strong>Setup Complete:</strong> After successfully connecting, user can return to the dashboard to begin trading.</li>
+      </ul>
+
+      <h5 class="cs-body__section-label">Final Prototype</h5>
+      <h3>What does the final solution look like?</h3>
+      <p>Working with the UX design team, I finalized the app design. After finalizing on the design, the team developed the mobile app. I collaborated with the engineering team to lead the QA and testing process.</p>
+
+      <h3>Screens</h3>
+      <img src="https://uploads-ssl.webflow.com/6212f5e51b730032bbf9d7e8/62255e3a8ffdf42a62eb295a_Prototype.png" alt="Final prototype screens for the Quadency onboarding flow" loading="lazy">
+
+      <h5 class="cs-body__section-label">Conclusion</h5>
+      <h3>Future iterations</h3>
+      <p>When I get more user feedback through interviews and surveys, I want to use these insights to examine how the onboarding flow can continue to be refined and improved. Quadency's diverse userbase results in varied use cases and goals for the app. By better understanding users' needs and pain points, I can prioritize product changes for the next phase of onboarding. One idea is a guided platform tour to introduce the app features.</p>
+
+      <h3>Takeaways</h3>
+      <p>The new onboarding flow has created a way for users to be introduced to Quadency and get started. Factors including the step-by-step guidance, minimal content, and UI design intend to familiarize the users with the platform.</p>
+      <p>As a product manager, this experience taught me the importance of understanding and addressing user pain points. There was a lot of ambiguity on how to get started with this project. I utilized research to prioritize a list of actionable requirements for the team to build. Also, I learned the necessity of an efficient design to engineering handoff. This emphasis minimized the number of errors and inconsistencies later on. I hope to apply this to my future roles leading a cross-functional team.</p>
     </div>
   </section>
 
