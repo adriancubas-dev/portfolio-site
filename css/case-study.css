@@ -5,8 +5,9 @@
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
-  padding: 80px 0;
-  min-height: 50vh;
+  height: 50vh;
+  min-height: 400px;
+  max-height: 560px;
   display: flex;
   align-items: center;
   overflow: visible;
@@ -16,7 +17,7 @@
   content: '';
   position: absolute;
   inset: 0;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.55);
 }
 
 .cs-hero .container {
@@ -25,14 +26,14 @@
 }
 
 .cs-hero__inner {
-  display: grid;
-  grid-template-columns: 1fr auto;
+  display: flex;
   align-items: center;
-  gap: 40px;
 }
 
 .cs-hero__text {
   text-align: left;
+  flex: 1;
+  padding-left: 40px;
 }
 
 .cs-hero__label {
@@ -46,42 +47,35 @@
 
 .cs-hero__title {
   font-family: var(--font-heading);
-  font-size: 36px;
+  font-size: 32px;
   font-weight: 400;
-  line-height: 46px;
+  line-height: 44px;
   color: var(--white);
-  max-width: 700px;
-  margin: 0 0 12px;
+  max-width: 500px;
+  margin: 0 0 20px;
 }
 
 .cs-hero__category {
   color: var(--grey-40);
   font-size: 16px;
+  font-weight: 700;
 }
 
 .cs-hero__mockup {
-  max-width: 280px;
+  position: absolute;
+  right: 18%;
+  top: 50%;
+  transform: translateY(-42%);
+  z-index: 2;
 }
 
 .cs-hero__mockup img {
-  width: 100%;
-  border-radius: 12px;
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  width: 240px;
+  height: auto;
 }
 
-/* Hero without mockup (centered text) */
-.cs-hero--simple .cs-hero__inner {
-  grid-template-columns: 1fr;
-  justify-items: center;
-  text-align: center;
-}
-
-.cs-hero--simple .cs-hero__text {
-  text-align: center;
-}
-
-.cs-hero--simple .cs-hero__title {
-  margin: 0 auto 12px;
+.cs-hero__mockup--wide img {
+  width: 380px;
 }
 
 /* Overview Section */
@@ -261,13 +255,21 @@
     line-height: 38px;
   }
 
-  .cs-hero__inner {
-    grid-template-columns: 1fr;
-    text-align: center;
+  .cs-hero {
+    height: auto;
+    min-height: 300px;
+    max-height: none;
+    padding: 60px 0;
   }
 
   .cs-hero__text {
     text-align: center;
+    max-width: 100%;
+  }
+
+  .cs-hero__title {
+    margin: 0 auto 12px;
+    max-width: 100%;
   }
 
   .cs-hero__mockup {
