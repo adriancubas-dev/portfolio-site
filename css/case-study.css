@@ -192,6 +192,24 @@
   width: 100%;
 }
 
+.cs-body img.float-left {
+  float: left;
+  width: 50%;
+  margin: 10px 30px 20px 0;
+}
+
+.cs-body img.float-right {
+  float: right;
+  width: 50%;
+  margin: 10px 0 20px 30px;
+}
+
+.cs-body .clearfix::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
 .cs-body blockquote {
   border-left: 4px solid var(--teal);
   padding-left: 20px;
