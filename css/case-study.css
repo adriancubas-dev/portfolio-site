@@ -92,13 +92,13 @@
 .cs-hero__mockup {
   position: absolute;
   right: 15%;
-  top: 60%;
+  top: 65%;
   transform: translateY(-30%);
   z-index: 0;
 }
 
 .cs-hero__mockup img {
-  width: 280px;
+  width: 240px;
   height: auto;
 }
 
@@ -109,7 +109,7 @@
 /* Overview Section */
 .cs-overview {
   background-color: white;
-  padding: 100px 0 80px;
+  padding: 140px 0 80px;
 }
 
 .cs-overview__title-section {
