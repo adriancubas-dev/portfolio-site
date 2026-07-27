@@ -3,10 +3,18 @@
   padding: 32px 48px;
 }
 
+.nav__logo {
+  filter: brightness(0) invert(1);
+}
+
 .nav__name,
 .nav__link,
 .nav__cta {
   color: white;
+}
+
+.nav--scrolled .nav__logo {
+  filter: none;
 }
 
 .nav__link:hover,

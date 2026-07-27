@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Adrian Cubas — Resume</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;700;900&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    @page {
+      size: letter;
+      margin: 0.5in;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      font-size: 9pt;
+      line-height: 1.45;
+      color: #1a1a1a;
+      background: white;
+      max-width: 8.5in;
+      margin: 0 auto;
+      padding: 0.5in;
+    }
+
+    /* Header */
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-bottom: 12px;
+      border-bottom: 2.5px solid #4a6fa5;
+      margin-bottom: 16px;
+    }
+
+    .header__left {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .header__logo {
+      width: 90px;
+      height: auto;
+    }
+
+    .header__name {
+      font-family: 'Inter', sans-serif;
+      font-size: 9pt;
+      font-weight: 700;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      line-height: 1;
+    }
+
+    .header__contact {
+      text-align: right;
+      font-size: 9pt;
+      color: #444;
+      line-height: 1.7;
+    }
+
+    .header__contact a {
+      color: #1a1a1a;
+      text-decoration: none;
+    }
+
+    .header__contact span {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .header__contact svg {
+      width: 12px;
+      height: 12px;
+      flex-shrink: 0;
+      color: #4a6fa5;
+    }
+
+    /* Layout */
+    .layout {
+      display: grid;
+      grid-template-columns: 1fr 220px;
+      gap: 40px;
+    }
+
+    /* Section */
+    .section {
+      margin-bottom: 14px;
+    }
+
+    .section__title {
+      font-family: 'Playfair Display', serif;
+      font-size: 10pt;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 8px;
+      padding-bottom: 3px;
+      border-bottom: 1px solid #ddd;
+      color: #4a6fa5;
+    }
+
+    /* Experience */
+    .job {
+      margin-bottom: 12px;
+    }
+
+    .job__header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 2px;
+    }
+
+    .job__title {
+      font-weight: 600;
+      font-size: 10pt;
+    }
+
+    .job__company {
+      font-weight: 600;
+      color: #4a6fa5;
+    }
+
+    .job__date {
+      font-size: 9pt;
+      color: #666;
+      white-space: nowrap;
+    }
+
+    .job__bullets {
+      padding-left: 16px;
+      margin-top: 3px;
+    }
+
+    .job__bullets li {
+      margin-bottom: 2px;
+      color: #333;
+    }
+
+    /* Sidebar */
+    .sidebar .section {
+      margin-bottom: 20px;
+    }
+
+    .sidebar .section__title {
+      font-size: 10pt;
+    }
+
+    .sidebar p,
+    .sidebar li {
+      font-size: 9pt;
+      color: #444;
+      line-height: 1.6;
+    }
+
+    .sidebar ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .sidebar ul li {
+      margin-bottom: 2px;
+    }
+
+    .skills-list {
+      font-size: 9pt;
+      color: #444;
+      line-height: 1.7;
+    }
+
+    .edu__school {
+      font-weight: 600;
+      font-size: 9.5pt;
+      color: #1a1a1a;
+    }
+
+    .edu__degree {
+      font-size: 9pt;
+      color: #444;
+    }
+
+    /* Print */
+    @media print {
+      body {
+        padding: 0;
+        max-width: none;
+      }
+
+      .header {
+        padding-bottom: 16px;
+        margin-bottom: 20px;
+      }
+    }
+
+    @media screen {
+      body {
+        padding: 0.75in;
+        box-shadow: 0 0 40px rgba(0,0,0,0.1);
+        margin: 40px auto;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="header__left">
+      <img src="../assets/images/reallogo_withouttext.png" alt="AC" class="header__logo">
+      <h1 class="header__name">Adrian Cubas</h1>
+    </div>
+    <div class="header__contact">
+      <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg><a href="https://www.adriancubas.com">adriancubas.com</a></span><br>
+      <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>San Jose, CA</span><br>
+      <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg><a href="mailto:wudrian5@gmail.com">wudrian5@gmail.com</a></span><br>
+      <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>909-509-0077</span>
+    </div>
+  </header>
+
+  <div class="layout">
+    <main>
+      <section class="section">
+        <h2 class="section__title">Experience</h2>
+
+        <div class="job">
+          <div class="job__header">
+            <span class="job__title">Senior Content & Conversation Designer | <span class="job__company">Amazon</span></span>
+            <span class="job__date">Jun 2024 – Present</span>
+          </div>
+          <ul class="job__bullets">
+            <li>Own language systems for Customer Service AI, powering 30+ conversational flows and AI-generated responses across millions of support interactions</li>
+            <li>Lead design of AI-assisted experiences, incl. summarization, intent prediction, & guided workflows, improving resolution rate by 9% and contact by 11%</li>
+            <li>Develop a conversational flow builder from content systems to enable rapid creation of AI-powered voice and chat flows, cutting build time by 22%</li>
+            <li>Create and operationalize LLM writing guidelines and evaluation frameworks with ML teams to improve response quality, consistency, and safety</li>
+          </ul>
+        </div>
+
+        <div class="job">
+          <div class="job__header">
+            <span class="job__title">Senior UX Content Designer | <span class="job__company">Mercari</span></span>
+            <span class="job__date">May 2022 – Jun 2024</span>
+          </div>
+          <ul class="job__bullets">
+            <li>Drove launch of AI product listing to reduce information and effort required to list an item, increasing daily list rate by 8% (+113,000 avg. listings)</li>
+            <li>Developed guest checkout experience which increased transaction completion rate by 7% and registration CVR by 12%</li>
+            <li>Revamped offers experience with onboarding and updated information architecture, increasing offers sent by 6% and completion rate by 8%</li>
+            <li>Established content system for buyer & seller experiences, including taxonomy, reusable content patterns, and guidelines, to improve consistency by 27%</li>
+          </ul>
+        </div>
+
+        <div class="job">
+          <div class="job__header">
+            <span class="job__title">Senior UX Content Designer | <span class="job__company">TikTok</span></span>
+            <span class="job__date">Apr 2021 – May 2024</span>
+          </div>
+          <ul class="job__bullets">
+            <li>Led content across 15+ Ads Measurement, Signal, & Privacy products, simplifying complex data and ads workflows for global advertisers</li>
+            <li>Redesigned Events Manager with a full content refresh and onboarding, resulting in 18% reduction in setup time and 13% increase in successful setup</li>
+            <li>Introduced AI-assisted diagnostics tools that guide users through troubleshooting & ad optimization, increasing first-time issue resolution by +6%</li>
+            <li>Built and scaled cross-product content system across Ads, defining guidance and driving end-to-end adoption which improved annual quality score by 25%</li>
+          </ul>
+        </div>
+
+        <div class="job">
+          <div class="job__header">
+            <span class="job__title">Web Content Specialist | <span class="job__company">CWC-Group</span></span>
+            <span class="job__date">Oct 2017 – Jun 2021</span>
+          </div>
+          <ul class="job__bullets">
+            <li>Set up web & email content strategy, driving +47% increase in traffic with SEO</li>
+            <li>Restructured site information and architecture to improve content discoverability across key customer journeys</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section__title">Leadership</h2>
+
+        <div class="job">
+          <div class="job__header">
+            <span class="job__title">Director of Content | <span class="job__company">Develop for Good</span></span>
+            <span class="job__date">Jan 2021 – Present</span>
+          </div>
+          <ul class="job__bullets">
+            <li>Introduce Content Design discipline and 50+ strategists to nonprofit projects</li>
+            <li>Create resource handbook to onboard teams of PMs and content strategists</li>
+            <li>Develop content system for messaging consistency across the platform</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <aside class="sidebar">
+      <section class="section">
+        <h2 class="section__title">Education</h2>
+        <p class="edu__school">University of California, Santa Barbara</p>
+        <p class="edu__degree">BA in English, Minor in Business Communications</p>
+      </section>
+
+      <section class="section">
+        <h2 class="section__title">UX + Design Skills</h2>
+        <p class="skills-list">Information architecture, UX writing, Content strategy, Content and design systems, User flows, Interaction design, Usability testing, User research, Concept testing, Heuristic evaluation, Accessibility, Prototyping and wireframing, Content management systems</p>
+      </section>
+
+      <section class="section">
+        <h2 class="section__title">AI Systems Building</h2>
+        <p class="skills-list">Conversational design, Dialogue & model design, LLM interaction design, Prompt design, AI behavior design, Agent design, Human-in-the-loop systems, AI evaluation, Personalization systems, Automation design, Product strategy, AI prototyping, Vibe coding, Content generation tooling, Workflow automation</p>
+      </section>
+
+      <section class="section">
+        <h2 class="section__title">Software</h2>
+        <ul>
+          <li>Figma</li>
+          <li>Adobe Photoshop/XD</li>
+          <li>Cursor</li>
+          <li>Claude</li>
+          <li>GitHub</li>
+          <li>Tableau</li>
+        </ul>
+      </section>
+    </aside>
+  </div>
+</body>
+</html>
