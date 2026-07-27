@@ -11,7 +11,7 @@
   <meta name="twitter:card" content="summary_large_image">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&family=Raleway:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="icon" href="assets/images/favicon.png" type="image/png">
@@ -21,14 +21,13 @@
   <nav class="nav" id="nav">
     <div class="nav__inner">
       <a href="index.html" class="nav__brand">
-        <img src="assets/images/aclogo121.png" alt="Adrian Cubas logo" class="nav__logo" loading="lazy">
         <span class="nav__name">Adrian Cubas</span>
       </a>
       <div class="nav__menu" id="nav-menu">
-        <a href="#recent-work" class="nav__link">Work</a>
-        <a href="documents/AdrianCubas_Resume_2026.pdf" target="_blank" class="nav__link">Resume</a>
+        <a href="#work" class="nav__link">Work</a>
         <a href="#about" class="nav__link">About</a>
-        <a href="https://www.linkedin.com/in/adriancubas/" target="_blank" class="nav__cta">Connect</a>
+        <a href="documents/AdrianCubas_Resume_2026.pdf" target="_blank" class="nav__link">Resume</a>
+        <a href="https://www.linkedin.com/in/adriancubas/" target="_blank" class="nav__link">Connect</a>
       </div>
       <div class="nav__toggle" id="nav-toggle" aria-label="Toggle menu" role="button" tabindex="0">
         <span></span>
@@ -38,112 +37,96 @@
     </div>
   </nav>
 
-  <section class="section section--hero">
-    <div class="container">
-      <div class="hero">
-        <div class="hero__content">
-          <img src="assets/images/bubble.png" alt="" class="hero__bubble hero__bubble--md fade-in" aria-hidden="true">
-          <h1 class="h1 hero__title fade-in">I'm Adrian, a <span class="hero-span">Content Design </span>+<span class="hero-span"> Product Builder</span></h1>
-          <p class="h4 hero__subtitle fade-in">I've helped craft experiences for your favorite products and brands. Right now, I'm a Senior UX Content and Conversation Designer at Amazon.</p>
-          <a href="#recent-work" class="hero__cta fade-in">Explore work</a>
-          <img src="assets/images/bubble.png" alt="" class="hero__bubble hero__bubble--sm fade-in" aria-hidden="true">
-          <img src="assets/images/bubble.png" alt="" class="hero__bubble hero__bubble--lg fade-in" aria-hidden="true">
-        </div>
-        <div class="hero__image fade-in">
-          <img src="assets/images/bubblebig.png" alt="" srcset="assets/images/bubblebig-p-500.png 500w, assets/images/bubblebig-p-800.png 800w, assets/images/bubblebig-p-1080.png 1080w, assets/images/bubblebig.png 1193w" sizes="(max-width: 767px) 100vw, 380px">
-          <img src="assets/images/small-dots.png" alt="" class="hero__dots hero__dots--right" aria-hidden="true">
-          <img src="assets/images/dots.png" alt="" class="hero__dots hero__dots--left" aria-hidden="true">
-        </div>
+  <section class="hero" id="hero">
+    <div class="hero__text">
+      <h1 class="hero__title">
+        <span class="hero__title-intro">hi, i'm</span>
+        <span class="hero__title-name">Adrian</span>
+      </h1>
+      <p class="hero__subtitle">Content Designer + Product Builder.<br>Crafting experiences for your favorite products and brands.</p>
+      <div class="hero__scroll">
+        <span class="hero__scroll-line"></span>
+        Scroll to explore
       </div>
+    </div>
+    <img src="assets/images/rose.png" alt="" class="hero__flower" aria-hidden="true">
+    <div class="hero__hover-zone"></div>
+    <div class="hero__image">
+      <img src="assets/images/IMG_0164.jpeg" alt="Adrian Cubas" class="hero__img-default">
+      <img src="assets/images/IMG_0159.jpeg" alt="Adrian Cubas" class="hero__img-hover">
+    </div>
+    <span class="hero__indicator">Portfolio 2026</span>
+  </section>
+
+  <section class="work" id="work">
+    <div class="work__header">
+      <span class="work__label">Selected Work</span>
+      <span class="work__count">01 — 06</span>
+    </div>
+    <div class="work__grid">
+      <a href="work/mercari-comments.html" class="work__item reveal">
+        <img src="https://uploads-ssl.webflow.com/6212f5e51b730032bbf9d7e8/668bce34ccca62ad4a0d3e12_mercaripsd.png" alt="Mercari social features">
+        <div class="work__item-info">
+          <h3 class="work__item-title">Social & Community</h3>
+          <p class="work__item-category">Mercari | UX Content Design</p>
+        </div>
+      </a>
+      <a href="work/mercari-offers.html" class="work__item reveal">
+        <img src="https://uploads-ssl.webflow.com/6212f5e51b730032bbf9d7e8/668cfa40c02d9c38d8c967c3_makeoffer%20(1).png" alt="Mercari offers">
+        <div class="work__item-info">
+          <h3 class="work__item-title">Offers Experience</h3>
+          <p class="work__item-category">Mercari | UX Content Design</p>
+        </div>
+      </a>
+      <a href="work/tiktok-contentdesign.html" class="work__item reveal">
+        <img src="https://uploads-ssl.webflow.com/6212f5e51b730032bbf9d7e8/668bce1dfeebe940791077d2_62257492795532075027cf0b_DFG_UXContent_banner%20(1)%20(2).png" alt="TikTok">
+        <div class="work__item-info">
+          <h3 class="work__item-title">Mobile Ad Landing Pages</h3>
+          <p class="work__item-category">TikTok | UX Content Design</p>
+        </div>
+      </a>
+      <a href="work/quadency-onboarding.html" class="work__item reveal">
+        <img src="https://uploads-ssl.webflow.com/6212f5e51b730032bbf9d7e8/621aef84bddb020a171ae813_Quadency_App_banner.png" alt="Quadency">
+        <div class="work__item-info">
+          <h3 class="work__item-title">Onboarding Experience</h3>
+          <p class="work__item-category">Quadency | Product Management</p>
+        </div>
+      </a>
+      <a href="work/covicare-appdesign.html" class="work__item reveal">
+        <img src="https://uploads-ssl.webflow.com/6212f5e51b730032bbf9d7e8/621b2f46672797100445a4d8_CoviCareScreen.png" alt="CoviCare">
+        <div class="work__item-info">
+          <h3 class="work__item-title">Healthcare App Design</h3>
+          <p class="work__item-category">CoviCare | App Design</p>
+        </div>
+      </a>
+      <a href="work/dfg-contentdesign.html" class="work__item reveal">
+        <img src="https://uploads-ssl.webflow.com/6212f5e51b730032bbf9d7e8/621aef696a610c7e6c94deba_DFG_UXContent_banner.png" alt="DFG">
+        <div class="work__item-info">
+          <h3 class="work__item-title">Content Design System</h3>
+          <p class="work__item-category">Develop for Good | UX Content Design</p>
+        </div>
+      </a>
     </div>
   </section>
 
-  <section class="section" id="recent-work">
-    <div class="container">
-      <div class="projects__header">
-        <h2 class="h2">Recent work</h2>
-      </div>
-      <div class="projects-grid">
-        <a href="work/mercari-comments.html" class="project-card fade-in">
-          <img src="https://uploads-ssl.webflow.com/6212f5e51b730032bbf9d7e8/668bce34ccca62ad4a0d3e12_mercaripsd.png" alt="Mercari social and community features" class="project-card__image" loading="lazy">
-          <div class="project-card__overlay"></div>
-          <h3 class="project-card__title">Integrating social and community features</h3>
-          <p class="project-card__category">Mercari — UX Content Design</p>
-          <span class="project-card__btn">See Project</span>
-        </a>
-        <a href="work/mercari-offers.html" class="project-card fade-in">
-          <img src="https://uploads-ssl.webflow.com/6212f5e51b730032bbf9d7e8/668cfa40c02d9c38d8c967c3_makeoffer%20(1).png" alt="Mercari offers experience" class="project-card__image" loading="lazy">
-          <div class="project-card__overlay"></div>
-          <h3 class="project-card__title">Improving adoption and completion of offers</h3>
-          <p class="project-card__category">Mercari — UX Content Design</p>
-          <span class="project-card__btn">See Project</span>
-        </a>
-        <a href="work/tiktok-contentdesign.html" class="project-card fade-in">
-          <img src="https://uploads-ssl.webflow.com/6212f5e51b730032bbf9d7e8/668bce1dfeebe940791077d2_62257492795532075027cf0b_DFG_UXContent_banner%20(1)%20(2).png" alt="TikTok ad landing pages" class="project-card__image" loading="lazy">
-          <div class="project-card__overlay"></div>
-          <h3 class="project-card__title">UX content design for mobile ad landing pages</h3>
-          <p class="project-card__category">TikTok — UX Content Design</p>
-          <span class="project-card__btn">See Project</span>
-        </a>
-        <a href="work/quadency-onboarding.html" class="project-card fade-in">
-          <img src="https://uploads-ssl.webflow.com/6212f5e51b730032bbf9d7e8/621aef84bddb020a171ae813_Quadency_App_banner.png" alt="Quadency onboarding experience" class="project-card__image" loading="lazy">
-          <div class="project-card__overlay"></div>
-          <h3 class="project-card__title">Developing the onboarding experience</h3>
-          <p class="project-card__category">Quadency — Product Management</p>
-          <span class="project-card__btn">See Project</span>
-        </a>
-        <a href="work/covicare-appdesign.html" class="project-card fade-in">
-          <img src="https://uploads-ssl.webflow.com/6212f5e51b730032bbf9d7e8/621b2f46672797100445a4d8_CoviCareScreen.png" alt="CoviCare tablet app" class="project-card__image" loading="lazy">
-          <div class="project-card__overlay"></div>
-          <h3 class="project-card__title">Designing an app for healthcare workers</h3>
-          <p class="project-card__category">CoviCare — App Design</p>
-          <span class="project-card__btn">See Project</span>
-        </a>
-        <a href="work/dfg-contentdesign.html" class="project-card fade-in">
-          <img src="https://uploads-ssl.webflow.com/6212f5e51b730032bbf9d7e8/621aef696a610c7e6c94deba_DFG_UXContent_banner.png" alt="Develop for Good content design system" class="project-card__image" loading="lazy">
-          <div class="project-card__overlay"></div>
-          <h3 class="project-card__title">Building a content design system</h3>
-          <p class="project-card__category">Develop for Good — UX Content Design</p>
-          <span class="project-card__btn">See Project</span>
-        </a>
-      </div>
+  <section class="about-section" id="about">
+    <div class="about-section__image reveal">
+      <img src="assets/images/IMG_0167.jpeg" alt="Adrian Cubas">
+    </div>
+    <div class="about-section__text reveal">
+      <span class="about-section__label">About</span>
+      <h2 class="about-section__title">Designing with words, building with intent.</h2>
+      <p class="about-section__desc">I'm a Senior UX Content and Conversation Designer at Amazon. I've spent my career helping teams craft clear, human-centered experiences — from marketplace communities to creator platforms.</p>
+      <p class="about-section__desc">I have years of international experience working in business, marketing, UX, and product management. This allows me to approach product development holistically while considering business impact.</p>
     </div>
   </section>
 
-  <section class="section" id="about">
-    <div class="container container--sm">
-      <div class="about">
-        <div class="about__text">
-          <h2 class="h2 fade-in">About me</h2>
-          <p class="text fade-in">Hi, I'm Adrian! I'm currently working as a Senior UX Content and Conversation Designer at Amazon. I develop products and experiences that solve user problems.</p>
-          <p class="text fade-in">I have years of international experience working in business, marketing, UX, and product management. This experience allows me to approach product development holistically while considering business impact. I feel comfortable working cross-functionally with teammates to build products and features from the lens of users.</p>
-          <p class="text fade-in">Feel free to reach out.</p>
-        </div>
-        <div class="about__profile fade-in">
-          <div class="about__photo">
-            <img src="assets/images/ITME.svg" alt="Adrian Cubas" srcset="assets/images/ITME-p-500.jpeg 500w, assets/images/ITME-p-800.jpeg 800w, assets/images/ITME.svg 2088w" sizes="200px" loading="lazy">
-          </div>
-          <h2 class="h2 about__name">Adrian Cubas</h2>
-          <div class="about__social">
-            <a href="https://www.linkedin.com/in/adriancubas/" target="_blank" aria-label="LinkedIn"><img src="assets/icons/linkedin.svg" alt="LinkedIn"></a>
-            <a href="mailto:wudrian5@gmail.com?subject=Inquiry%20from%20Adrian%20Site" aria-label="Email"><img src="assets/icons/email.svg" alt="Email"></a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <footer class="section section--footer">
-    <div class="container">
-      <div class="footer">
-        <div class="footer__links">
-          <a href="#recent-work" class="footer__link">Work</a>
-          <div class="footer__dot"></div>
-          <a href="#about" class="footer__link">About</a>
-          <div class="footer__dot"></div>
-          <a href="https://www.linkedin.com/in/adriancubas/" target="_blank" class="footer__link">LinkedIn</a>
-        </div>
-      </div>
+  <footer class="footer">
+    <div class="footer__links">
+      <a href="#work" class="footer__link">Work</a>
+      <a href="#about" class="footer__link">About</a>
+      <a href="https://www.linkedin.com/in/adriancubas/" target="_blank" class="footer__link">LinkedIn</a>
+      <a href="mailto:wudrian5@gmail.com" class="footer__link">Email</a>
     </div>
   </footer>
 
