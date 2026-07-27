@@ -91,14 +91,14 @@
 
 .cs-hero__mockup {
   position: absolute;
-  right: 8%;
-  top: 50%;
+  right: 4%;
+  top: 55%;
   transform: translateY(-35%);
   z-index: 0;
 }
 
 .cs-hero__mockup img {
-  width: 240px;
+  width: 220px;
   height: auto;
 }
 
