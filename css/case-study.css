@@ -3,6 +3,10 @@
   padding: 32px 48px;
 }
 
+.nav__logo {
+  filter: brightness(0) invert(1);
+}
+
 .nav__name,
 .nav__link,
 .nav__cta {
@@ -12,6 +16,10 @@
 .nav__link:hover,
 .nav__cta:hover {
   background: rgba(255, 255, 255, 0.15);
+}
+
+.nav--scrolled .nav__logo {
+  filter: none;
 }
 
 .nav--scrolled .nav__name,
@@ -92,9 +100,9 @@
 
 .cs-hero__mockup {
   position: absolute;
-  right: 8%;
-  top: 50%;
-  transform: translateY(-35%);
+  right: 15%;
+  top: 65%;
+  transform: translateY(-30%);
   z-index: 0;
 }
 
@@ -110,7 +118,7 @@
 /* Overview Section */
 .cs-overview {
   background-color: white;
-  padding: 60px 0 80px;
+  padding: 140px 0 80px;
 }
 
 .cs-overview__title-section {
